@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="display: block; text-align: center;">Flexbox Blog-Card</h1>
+    <style>
+        .container{
+           
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .items1{
+            background-color: white;
+            border: 2px solid palevioletred;
+            width: 300px;
+            height: 500px;
+            border-radius: 2px;
+        }
+        .items2{
+            background-color: white;
+            border: 2px solid palevioletred;
+            width: 300px;
+            height: 500px;
+            border-radius: 2px;
+        }
+        
+        .image{
+            width: 300px;
+            height: 250px;
+            border-bottom: 4px solid palevioletred;
+        }
+        .ny{
+            position: absolute;
+            top: 37%;
+            left: 34%;
+            color: white;
+            font-size: 40px;
+        }
+        .sanf{
+            position: absolute;
+            top: 37%;
+            left: 53%;
+            color: white;
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .c{
+            margin-top: 20px;
+            width: 230px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            margin-top: 15px;
+            margin-left: 70px;
+            background-color: palevioletred;
+            align-items: center;
+            border: none;
+        }
+        
+    </style>
+    <div class="container">
+        <div class="items1">
+            <img src="newyork.jpg" alt="newyork" class="image">
+            <div class="ny">New York</div>
+            <div class="c"><a><i class="fa-regular fa-calendar-days" style="margin-left: 50px;"></i>AUG 4</a>
+            <a><i class="fa-solid fa-heart"></i>102</a></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laboriosam dignissimos voluptas eligendi magni reiciendis unde.</p>
+            <div class="rm"><button>READ MORE</button></div>
+        </div>
+        <div class="items2">
+            <img src="sanfrancisco.jpg" alt="san" class="image">
+            <div class="sanf">San Francisco </div>
+            <div class="c"><a><i class="fa-regular fa-calendar-days" style="margin-left: 50px;"></i>AUG 4</a>
+                <a><i class="fa-solid fa-heart"></i>102</a></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta consequatur fugiat unde omnis odio neque, harum recusandae sint ?</p>
+            <div class="rm"><button>READ MORE</button></div>
+        </div>
+    </div>
+</body>
+</html>
